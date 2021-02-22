@@ -58,10 +58,9 @@ then
     # Install laravel dependencies with composer
     composer install -o --no-interaction --no-dev
 
-    # Create symlinks to `data`
-    ln -sf $BASE_DIR/data/.env ./
-    rm -rf storage && ln -sf $BASE_DIR/data/storage ./
-    rm -rf public/files && ln -sf $BASE_DIR/data/files ./public
+    # Create symlinks to `shared`
+    ln -sf $BASE_DIR/shared/.env ./
+    rm -rf storage && ln -sf $BASE_DIR/shared/storage ./
 
     # Do artisan stuff
     artisan
