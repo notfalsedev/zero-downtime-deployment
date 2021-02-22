@@ -1,0 +1,7 @@
+name: zero-downtime-deployment
+recipe: laravel
+config:
+  php: '7.2'
+  via: apache:2.4
+  webroot: ./www/public
+  xdebug: false
