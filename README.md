@@ -10,7 +10,9 @@ GIT_REMOTE_URL = The url to your repo (ssh://github.com/awesome-project/repo.git
 BASE_DIR = The vhost root folder location (/home/laravel/domains/awesome-project.io)
 ```
 
-Make sure the apache/nginx vhost folder is pointing to: `{root-folder}/www/public`
+Make sure the apache/nginx vhost folder is pointing to: `{root-folder}/www/public`<br/>
+
+Copy your `.env` to `{root-folder}/shared/.env`.
 
 ## Running the deployment
 
